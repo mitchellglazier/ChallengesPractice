@@ -2,6 +2,9 @@
   Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements. (not working)
 </p>
 <form>
-  <input (input)="str=$event.target.value" type="text" class="form-control">
-  <button mat-stroked-button colors="warn" class="btn btn-success" (click)="uniqueInOrder()">Submit</button>
+  <mat-form-field>
+      <input matInput (input)="str=$event.target.value" type="text" class="form-control">
+  </mat-form-field>
 </form>
+<button mat-stroked-button color="accent" class="btn btn-success" (click)="uniqueInOrder()">Submit</button>
+
