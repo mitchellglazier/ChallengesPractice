@@ -1,0 +1,19 @@
+<p>
+    Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+</p>
+<form>
+    <input id="number1" (input)="number1=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number2" (input)="number2=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number3" (input)="number3=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number4" (input)="number4=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number5" (input)="number5=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number6" (input)="number6=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number7" (input)="number7=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number8" (input)="number8=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number9" (input)="number9=$event.target.value" type="number" class="form-control" required maxlength='1'>
+    <input id="number10" (input)="number10=$event.target.value" type="number" class="form-control" required maxlength='1'> 
+
+    <button mat-stroked-button colors="warn" class="btn btn-success" (click)="createPhoneNumber()">Submit</button>
+    <!-- <button mat-stroked-button disabled>Disabled</button> -->
+  </form>
+  <p class="answer" *ngIf='phoneNumber'>Phone Number: {{phoneNumber}}</p>

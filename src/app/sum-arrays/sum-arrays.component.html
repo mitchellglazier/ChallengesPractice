@@ -1,0 +1,13 @@
+<p>
+    Write a method sum that takes an array of numbers and returns the sum of the numbers. The numbers can also be negative. 
+  </p>
+  <form>
+      <input id="number1" (input)="number1=$event.target.value" type="number" class="form-control" required>
+      <input id="number2" (input)="number2=$event.target.value" type="number" class="form-control" required>
+      <input id="number3" (input)="number3=$event.target.value" type="number" class="form-control" required>
+      <input id="number4" (input)="number4=$event.target.value" type="number" class="form-control" required>
+      <input id="number5" (input)="number5=$event.target.value" type="number" class="form-control" required>
+  
+      <button mat-stroked-button colors="warn" class="btn btn-success" (click)="sum()">Submit</button>
+  </form>
+  <p class="answer" *ngIf='total'>Total: {{total}}</p>
