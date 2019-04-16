@@ -1,48 +1,147 @@
 <p>
-    Write a function that accepts an array of 10 integers (between 0 and 9), <br>
-     that returns a string of those numbers in the form of a phone number.
+        Write a function that accepts an array of 10 integers (between 0 and 9), <br>
+        that returns a string of those numbers in the form of a phone number.
 </p>
-<form>
-    <mat-form-field>
-        <input matInput id="number1" (input)="number1=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field>
-    <br>    
-    <mat-form-field>
-        <input matInput id="number2" (input)="number2=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field>
-    <br>  
-    <mat-form-field>
-        <input matInput id="number3" (input)="number3=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field> 
-    <br>
-    <mat-form-field>
-        <input matInput id="number4" (input)="number4=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field> 
-    <br>   
-    <mat-form-field>
-        <input matInput id="number5" (input)="number5=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field> 
-    <br>
-    <mat-form-field>
-        <input matInput id="number6" (input)="number6=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field>
-    <br>
-    <mat-form-field>
-        <input matInput id="number7" (input)="number7=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field> 
-    <br>
-    <mat-form-field>
-        <input matInput id="number8" (input)="number8=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field>
-    <br>
-    <mat-form-field>
-        <input matInput id="number9" (input)="number9=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field> 
-    <br>                
-    <mat-form-field>
-        <input matInput id="number10" (input)="number10=$event.target.value" type="number" class="form-control" required maxlength='1'>
-    </mat-form-field>     
-</form>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number1" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number2" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number3" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number4" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number5" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number6" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number7" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number8" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number9" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
+<mat-form-field>
+        <mat-label></mat-label>
+        <mat-select [(value)]="number10" required>
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+                <mat-option value="4">4</mat-option>
+                <mat-option value="5">5</mat-option>
+                <mat-option value="6">6</mat-option>
+                <mat-option value="7">7</mat-option>
+                <mat-option value="8">8</mat-option>
+                <mat-option value="9">9</mat-option>
+        </mat-select>
+</mat-form-field>
 <button mat-stroked-button color="accent" class="btn btn-success" (click)="createPhoneNumber()">Submit</button>
 
-  <p class="answer" *ngIf='phoneNumber'>Phone Number: {{phoneNumber}}</p>
+<p class="answer" *ngIf='phoneNumber'>Phone Number: {{phoneNumber}}</p>

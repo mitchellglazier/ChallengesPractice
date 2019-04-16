@@ -42,6 +42,14 @@ createPhoneNumber() {
   const fourDigits = [newNumbers[6], newNumbers[7], newNumbers[8], newNumbers[9]];
   const fourDigitsJoin = fourDigits.join('');
   this.phoneNumber = ('(' + areaCodeJoin + ') ' + threeDigitsjoin + '-' + fourDigitsJoin);
-   }
-}
 
+  }
+
+
+shuffleArray(numbers) {
+  for (let i = numbers.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+  }
+}
+}
