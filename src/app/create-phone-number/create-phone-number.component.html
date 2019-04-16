@@ -2,6 +2,7 @@
         Write a function that accepts an array of 10 integers (between 0 and 9), <br>
         that returns a string of those numbers in the form of a phone number.
 </p>
+<form>
 <mat-form-field>
         <mat-label></mat-label>
         <mat-select [(value)]="number1" required>
@@ -142,6 +143,7 @@
                 <mat-option value="9">9</mat-option>
         </mat-select>
 </mat-form-field>
-<button mat-stroked-button color="accent" class="btn btn-success" (click)="createPhoneNumber()">Submit</button>
+</form>
+<button mat-raised-button color="accent" class="btn btn-success" (click)="createPhoneNumber()">Submit</button>
 
 <p class="answer" *ngIf='phoneNumber'>Phone Number: {{phoneNumber}}</p>

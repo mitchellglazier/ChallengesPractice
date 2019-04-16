@@ -1,26 +1,33 @@
 
 <div style="text-align:center">
-  <app-navbar></app-navbar>
-  <h1>
-    Coding Challenges practice!
-  </h1>
+
+  <div>
+      <h1>
+          Coding Challenges practice!
+        </h1>
+        <app-navbar></app-navbar>
+  </div>
+
   <mat-grid-list cols="2" rowHeight="2:1">
     <mat-list>
-    <mat-grid-tile>
+    <mat-grid-tile class="background-lightgray">
         <app-exesandooos></app-exesandooos>
     </mat-grid-tile>
     <mat-divider></mat-divider>
-    <mat-grid-tile>
+    <mat-grid-tile class="background-darkgray">
         <app-unique-in-order></app-unique-in-order>
     </mat-grid-tile>
-    <mat-grid-tile>
+    <mat-grid-tile class="background-darkgray">
         <app-create-phone-number></app-create-phone-number>
     </mat-grid-tile>
-    <mat-grid-tile>
+    <mat-grid-tile class="background-lightgray">
         <app-sum-arrays></app-sum-arrays>
     </mat-grid-tile>
-    <mat-grid-tile>
+    <mat-grid-tile class="background-lightgray">
         <app-reverse-anumber></app-reverse-anumber>
+    </mat-grid-tile>
+    <mat-grid-tile class="background-darkgray">
+        <app-multiply></app-multiply>
     </mat-grid-tile>
   </mat-list>
   </mat-grid-list>

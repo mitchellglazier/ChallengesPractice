@@ -18,6 +18,7 @@ import { CreatePhoneNumberComponent } from './create-phone-number/create-phone-n
 import { SumArraysComponent } from './sum-arrays/sum-arrays.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReverseANumberComponent } from './reverse-anumber/reverse-anumber.component';
+import { MultiplyComponent } from './multiply/multiply.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ReverseANumberComponent } from './reverse-anumber/reverse-anumber.compo
     SumArraysComponent,
     NavbarComponent,
     ReverseANumberComponent,
+    MultiplyComponent,
   ],
   imports: [
     BrowserModule,

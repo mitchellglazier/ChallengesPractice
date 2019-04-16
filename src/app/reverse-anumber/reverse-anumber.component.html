@@ -6,6 +6,6 @@
        <input matInput (input)="n=$event.target.value" type="text" class="form-control">
      </mat-form-field>
 </form>
- <button mat-stroked-button color="accent" (click)="reversedNum()">Submit</button>
+ <button mat-raised-button color="accent" (click)="reversedNum()">Submit</button>
 <p *ngIf="rNumber1" class="answer">Your reversed number is: {{rNumber1}}</p>
 

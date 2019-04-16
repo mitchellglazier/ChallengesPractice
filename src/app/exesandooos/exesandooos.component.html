@@ -5,7 +5,7 @@
         <input matInput (input)="str=$event.target.value" type="text" class="form-control">
       </mat-form-field>
 </form>
-  <button mat-stroked-button color="accent" (click)="xoCheck()">Submit</button>
+  <button mat-raised-button color="accent" (click)="xoCheck()">Submit</button>
 <p class="answer" *ngIf='isEqual'>Your string has the same amount of x's and o'x</p>
 <p class="answer" *ngIf='isEqual === false'>Your string does not have the same amount of x's and o'x</p>
 
