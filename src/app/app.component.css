@@ -1,13 +1,1 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
-.background-lightgray {
-    background-color: lightgray
-}
-
-.background-darkgray {
-    background-color: gray
-}
-
-.background-blue {
-    background-color: blue
-}
