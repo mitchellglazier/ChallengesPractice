@@ -11,8 +11,9 @@ import { MatButtonModule,
   MatGridListModule,
   MatListModule,
   MatSelectModule,
-  MatDialogModule }
-from '@angular/material';
+  MatTabsModule,
+  MatCardModule,
+  MatDialogModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ExesandooosComponent } from './exesandooos/exesandooos.component';
@@ -26,6 +27,7 @@ import { FunctionalAdditionComponent } from './functional-addition/functional-ad
 import { HomeComponent } from './home/home.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProjectsComponent } from './projects/projects.component'; 
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FunctionalAdditionComponent,
     HomeComponent,
     ChallengesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProjectsComponent
   ],
   imports: [
   BrowserModule,
@@ -55,9 +58,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatListModule,
     MatSelectModule,
     MatDialogModule,
+    MatTabsModule,
+    MatCardModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
       { path: 'challenges', component: ChallengesComponent},
+      { path: 'projects', component: ProjectsComponent},
       { path: '**', component: NotFoundComponent}
     ])
   ],
