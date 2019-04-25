@@ -1,0 +1,16 @@
+<mat-card>
+    <p> 
+      A program that among the given numbers finds the indexes that are different from the majority in evenness, and returns the indexes of these numbers.
+
+        ! Keep in mind that your task is to help Bob solve a real IQ test, which means indexes of the elements start from 1 (not 0)
+    </p>
+    <form>
+     <mat-form-field>
+         <input matInput (input)="number=$event.target.value" type="number" class="form-control">
+       </mat-form-field>
+  </form>
+    <button mat-raised-button color="accent" class="btn btn-success" (click)="iqTest()">Submit</button>
+
+    <p class="answer" *ngIf='index'>The 1 based index that is different is: {{index}}</p>
+
+</mat-card>

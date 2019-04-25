@@ -1,10 +1,13 @@
-<p>
-  Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
-</p>
-<form>
-  <mat-form-field>
-      <input matInput (input)="str=$event.target.value" type="text" class="form-control">
-  </mat-form-field>
-</form>
-<button mat-raised-button color="accent" class="btn btn-success" (click)="uniqueInOrder()">Submit</button>
-<p *ngIf="result" class="answer">Your string without any consecutive doubles is: <br>  "{{result}}"</p>
+<mat-card>
+    <p>
+        Implement the function unique_in_order which takes as argument a sequence and returns a list of 
+        items without any elements with the same value next to each other and preserving the original order of elements.
+      </p>
+      <form>
+        <mat-form-field>
+            <input matInput (input)="str=$event.target.value" type="text" class="form-control">
+        </mat-form-field>
+      </form>
+      <button mat-raised-button color="accent" class="btn btn-success" (click)="uniqueInOrder()">Submit</button>
+      <p *ngIf="result" class="answer">Your string without any consecutive doubles is: <br>  "{{result}}"</p>
+</mat-card>

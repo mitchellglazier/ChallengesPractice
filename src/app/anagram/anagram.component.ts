@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { AnagramModalComponent } from '../anagram-modal/anagram-modal.component';
+
 
 @Component({
   selector: 'app-anagram',
@@ -6,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./anagram.component.css']
 })
 export class AnagramComponent {
+  animal: string;
+  name: string;
   str1: string;
   str2: string;
   anagram: boolean;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   anagrams() {
     const word1 = this.str1.split('').sort().join('');
@@ -22,4 +27,14 @@ export class AnagramComponent {
     }
   }
 
+  openDialog(): void {
+    const dialogRef = this.dialog.open(AnagramModalComponent, {
+      width: '250px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.animal = result;
+    });
+
+}
 }

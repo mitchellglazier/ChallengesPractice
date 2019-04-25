@@ -1,17 +1,18 @@
-<p>What is an anagram? Well, two words are anagrams of each other if they both contain the same letters.
-  <br> Check to see if your words are anagrams!
-</p>
-<form>
-   <mat-form-field class="input-space">
-        <input matInput (input)="str1=$event.target.value" type="text" class="form-control">
-    </mat-form-field>
-      <mat-form-field>
-        <input matInput (input)="str2=$event.target.value" type="text" class="form-control">
-     </mat-form-field>
-</form>
- <button mat-raised-button color="accent" (click)="anagrams()">Submit</button>
- <p *ngIf='anagram' class="answer">Your words are Anagrams</p>
- <p *ngIf='anagram === false' class="answer">Your words are not Anagrams</p>
-
-
-
+<mat-card>
+    <p>What is an anagram? Well, two words are anagrams of each other if they both contain the same letters.
+       Check to see if your words are anagrams!
+      </p>
+      <form>
+         <mat-form-field class="input-space">
+              <input matInput (input)="str1=$event.target.value" type="text" class="form-control">
+          </mat-form-field>
+            <mat-form-field>
+              <input matInput (input)="str2=$event.target.value" type="text" class="form-control">
+           </mat-form-field>
+      </form>
+       <button mat-raised-button color="accent" (click)="anagrams()">Submit</button>
+       <p *ngIf='anagram' class="answer">Your words are Anagrams</p>
+       <p *ngIf='anagram === false' class="answer">Your words are not Anagrams</p>
+       <button mat-raised-button (click)="openDialog()">See Code</button>
+      
+</mat-card>

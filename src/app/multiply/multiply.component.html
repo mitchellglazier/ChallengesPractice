@@ -1,15 +1,18 @@
-<p>
-  multiply two numbers together.
-</p>
-
-<form>
-    <mat-form-field class="input-space">
-        <input matInput id="number1" (input)="number1=$event.target.value" type="number" class="form-control">
-    </mat-form-field>
-    <mat-form-field class="input-space">
-        <input matInput id="number2" (input)="number2=$event.target.value" type="number" class="form-control">
-    </mat-form-field>
-  </form>
-          
-  <button mat-raised-button color="accent" class="btn btn-success" (click)="multiply()">Submit</button>
-<p class="answer" *ngIf='number3'>Total: {{number3}}</p>
+<mat-card>
+    <p>
+        multiply two numbers together. It's really fun to do! Just give it a try.
+      </p>
+      
+      <form>
+          <mat-form-field class="input-space">
+              <input matInput id="number1" (input)="number1=$event.target.value" type="number" class="form-control">
+          </mat-form-field>
+          <mat-form-field class="input-space">
+              <input matInput id="number2" (input)="number2=$event.target.value" type="number" class="form-control">
+          </mat-form-field>
+        </form>
+        <mat-card-actions>
+                <button mat-raised-button color="accent" class="btn btn-success" (click)="multiply()">Submit</button>
+        </mat-card-actions>
+                <p class="answer" *ngIf='number3'>Total: {{number3}}</p>     
+</mat-card>

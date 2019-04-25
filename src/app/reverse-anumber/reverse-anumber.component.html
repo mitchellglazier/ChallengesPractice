@@ -1,11 +1,14 @@
-<p>Given a number, write a function to output its reverse digits. Numbers should preserve <br>
-   their sign; i.e. a negative number should still be negative when reversed.</p>
-
-<form>
-   <mat-form-field>
-       <input matInput (input)="n=$event.target.value" type="number" class="form-control">
-     </mat-form-field>
-</form>
- <button mat-raised-button color="accent" (click)="reversedNum()">Submit</button>
-<p *ngIf="rNumber1" class="answer">Your reversed number is: {{rNumber1}}</p>
+<mat-card>
+      <p>Given a number, write a function to output its reverse digits. Numbers should preserve
+         their sign; i.e. a negative number should still be negative when reversed.</p>
+      
+      <form>
+         <mat-form-field>
+             <input matInput (input)="n=$event.target.value" type="number" class="form-control">
+           </mat-form-field>
+      </form>
+       <button mat-raised-button color="accent" (click)="reversedNum()">Submit</button>
+      <p *ngIf="rNumber1" class="answer">Your reversed number is: {{rNumber1}}</p>
+      
+</mat-card>
 

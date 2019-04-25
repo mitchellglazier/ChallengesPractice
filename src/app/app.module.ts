@@ -28,7 +28,12 @@ import { HomeComponent } from './home/home.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { AnagramComponent } from './anagram/anagram.component'; 
+import { AnagramComponent } from './anagram/anagram.component';
+import { IqTestComponent } from './iq-test/iq-test.component';
+import { MaterialModule } from './material.module';
+import { AnagramModalComponent } from './anagram-modal/anagram-modal.component';
+import { CreatePhoneNumberModalComponent } from './create-phone-number-modal/create-phone-number-modal.component';
+// import { HorizontalTimelineComponent } from './horizontal-timeline/horizontal-timeline.component';
 
 @NgModule({
   declarations: [
@@ -45,10 +50,15 @@ import { AnagramComponent } from './anagram/anagram.component';
     ChallengesComponent,
     NotFoundComponent,
     ProjectsComponent,
-    AnagramComponent
+    AnagramComponent,
+    IqTestComponent,
+    AnagramModalComponent,
+    CreatePhoneNumberModalComponent,
+    // HorizontalTimelineComponent
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
+    MaterialModule,
     MatFormFieldModule,
     MatIconModule,
     MatButtonModule,
@@ -71,6 +81,10 @@ import { AnagramComponent } from './anagram/anagram.component';
   ],
   providers: [
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    CreatePhoneNumberModalComponent,
+    AnagramModalComponent
+    ]
 })
 export class AppModule { }

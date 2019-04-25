@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Here is the JavaScript</h1>
+<code> createPhoneNumber() 
+    const array = this.number1.split('');
+    const areaCode = [array[0], array[1], array[2]];
+    const areaCodeJoin = areaCode.join('');
+    const threeDigits = [array[3], array[4], array[5]];
+    const threeDigitsjoin = threeDigits.join('');
+    const fourDigits = [array[6], array[7], array[8], array[9]];
+    const fourDigitsJoin = fourDigits.join('');
+    this.phoneNumber = ('(' + areaCodeJoin + ') ' + threeDigitsjoin + '-' + fourDigitsJoin);
+  
+  
+  shuffleArray(numbers) 
+    for (let i = numbers.length - 1; i > 0; i--) 
+        const j = Math.floor(Math.random() * (i + 1));
+        [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+    
+     </code>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cool</button>
+</div>

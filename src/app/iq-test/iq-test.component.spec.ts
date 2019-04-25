@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreatePhoneNumberComponent } from './create-phone-number.component';
+import { IqTestComponent } from './iq-test.component';
 
-describe('CreatePhoneNumberComponent', () => {
-  let component: CreatePhoneNumberComponent;
-  let fixture: ComponentFixture<CreatePhoneNumberComponent>;
+describe('IqTestComponent', () => {
+  let component: IqTestComponent;
+  let fixture: ComponentFixture<IqTestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreatePhoneNumberComponent ]
+      declarations: [ IqTestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CreatePhoneNumberComponent);
+    fixture = TestBed.createComponent(IqTestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,3 +5,8 @@
 .input-space {
     margin-right: 10px;
 }
+
+mat-card {
+    width: 90%;
+    height: 300px;
+}

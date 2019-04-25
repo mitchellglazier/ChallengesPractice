@@ -1,24 +1,15 @@
-<p>
-    Write a method sum that takes an array of numbers and returns <br>
-     the sum of the numbers. The numbers can also be negative. 
-  </p>
-  <form>
-        <mat-form-field class="input-space">
-            <input matInput id="number1" (input)="number1=$event.target.value" type="number" class="form-control">
-        </mat-form-field>
-        <mat-form-field class="input-space">
-            <input matInput id="number2" (input)="number2=$event.target.value" type="number" class="form-control">
-        </mat-form-field>
-         <mat-form-field class="input-space">
-            <input matInput id="number3" (input)="number3=$event.target.value" type="number" class="form-control">
-        </mat-form-field>
-        <mat-form-field class="input-space">
-            <input matInput id="number4" (input)="number4=$event.target.value" type="number" class="form-control">
-        </mat-form-field>
-        <mat-form-field class="input-space">
-            <input matInput id="number5" (input)="number5=$event.target.value" type="number" class="form-control">
-        </mat-form-field>
-    </form>
-          
-      <button mat-raised-button color="accent" class="btn btn-success" (click)="sum()">Submit</button>
-  <p class="answer" *ngIf='total'>Total: {{total}}</p>
+<mat-card>
+        <p>
+                Write a method sum that takes an array of numbers (0-9) and returns
+                 the sum of the numbers.
+              </p>
+              <form>
+                    <mat-form-field class="input-space">
+                        <input matInput id="number1" (input)="number1=$event.target.value" type="number" class="form-control">
+                     </mat-form-field>   
+                </form>
+                      
+                  <button mat-raised-button color="accent" class="btn btn-success" (click)="sum()">Submit</button>
+              <p class="answer" *ngIf='total'>Total: {{total}}</p>
+</mat-card>
+

@@ -1,9 +1,11 @@
-<p>Create a function which returns a function that always adds n to any number</p>
+<mat-card>
+    <p>Create a function which returns a function that always adds n to any number</p>
 
-<form>
-  <mat-form-field>
-      <input matInput (input)="n=$event.target.value" type="number" class="form-control">
-    </mat-form-field>
-</form>
-<button mat-raised-button color="accent" (click)="add()">Submit</button>
-<p *ngIf="aNumber" class="answer">{{n}} + {{n2}} = {{aNumber}}</p>
+    <form>
+      <mat-form-field>
+          <input matInput (input)="n=$event.target.value" type="number" class="form-control">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="accent" (click)="add()">Submit</button>
+    <p *ngIf="aNumber" class="answer">{{n}} + {{n2}} = {{aNumber}}</p>
+</mat-card>

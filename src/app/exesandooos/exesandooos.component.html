@@ -1,11 +1,14 @@
-<p>Check to see if a string has the same amount of 'x's and 'o's. The method must return <br>
-   a boolean and be case insensitive. The string can contain any char.</p>
-<form>
-    <mat-form-field>
-        <input matInput (input)="str=$event.target.value" type="text" class="form-control">
-      </mat-form-field>
-</form>
-  <button mat-raised-button color="accent" (click)="xoCheck()">Submit</button>
-<p class="answer" *ngIf='isEqual'>Your string has the same amount of x's and o'x</p>
-<p class="answer" *ngIf='isEqual === false'>Your string does not have the same amount of x's and o'x</p>
+<mat-card>
+    <p>Check to see if a string has the same amount of 'x's and 'o's. The method must return
+      a boolean and be case insensitive. The string can contain any char.</p>
+   <form>
+       <mat-form-field>
+           <input matInput (input)="str=$event.target.value" type="text" class="form-control">
+         </mat-form-field>
+   </form>
+     <button mat-raised-button color="accent" (click)="xoCheck()">Submit</button>
+   <p class="answer" *ngIf='isEqual'>Your string has the same amount of x's and o'x</p>
+   <p class="answer" *ngIf='isEqual === false'>Your string does not have the same amount of x's and o'x</p>
+   
+</mat-card>
 
