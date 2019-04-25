@@ -12,24 +12,30 @@ export class UniqueInOrderComponent {
   str: string;
   charCheck: any;
   charCheck2: any;
+  result: string;
+  array: string;
 
   uniqueInOrder() {
-    let z = 1;
+    const array = this.str.split('');
     let i = 0;
-    const str1 = this.str.replace(/\s/g, '');
-    let charCheck = str1.charAt(i);
-    for (; i < str1.length; i++) {
-      let charCheck2 = str1.charAt(z);
-      for (; z < str1.length; z++) {
-        if (charCheck === charCheck2) {
-            let str2 = str1.slice(0, i) + str1.slice(z);
-            console.log(str2);
-          } else {
-            console.log(str1);
-    }
-    }
-    }
-
+    for (; i < array.length; i++) {
+      const charCheck = array[i];
+      const charCheck2 = array[i + 1];
+      if (charCheck === charCheck2) {
+      array.splice(i, 1);
+      } else {
+        this.result = array.toString().replace(/,/g, ' ');
       }
-     }
- 
+    }
+    let z = 0;
+    for (; z < array.length; z++) {
+      const charCheck = array[z];
+      const charCheck2 = array[z + 1];
+      if (charCheck === charCheck2) {
+      array.splice(z, 1);
+      } else {
+        this.result = array.toString().replace(/,/g, '');
+      }
+    }
+  }
+}

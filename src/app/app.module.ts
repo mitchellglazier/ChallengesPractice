@@ -27,7 +27,8 @@ import { FunctionalAdditionComponent } from './functional-addition/functional-ad
 import { HomeComponent } from './home/home.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ProjectsComponent } from './projects/projects.component'; 
+import { ProjectsComponent } from './projects/projects.component';
+import { AnagramComponent } from './anagram/anagram.component'; 
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeComponent,
     ChallengesComponent,
     NotFoundComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AnagramComponent
   ],
   imports: [
   BrowserModule,
