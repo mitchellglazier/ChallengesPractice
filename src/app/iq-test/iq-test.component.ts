@@ -11,14 +11,15 @@ export class IqTestComponent {
 
   number: string;
   index: string;
+  array;
 
   iqTest() {
     const evenNumbers = [];
     const oddNumbers = [];
     let i = 0;
-    const array = this.number.split('');
-    for (; i < array.length; i++) {
-      if (array[i] % 2 === 0 ) {
+    this.array = this.number.split('');
+    for (; i < this.array.length; i++) {
+      if (this.array[i] % 2 === 0 ) {
         evenNumbers.push(i + 1);
       } else {
         oddNumbers.push(i + 1);
